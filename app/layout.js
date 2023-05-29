@@ -1,9 +1,19 @@
-import react from "react";
-
 const Layout = ({ children }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <title>Lale</title>
+        <link
+          rel="icon"
+          href="https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg"
+        />
+      </head>
+
+      <body>
+        <header>Header</header>
+        {children}
+        <footer>Footer</footer>
+      </body>
     </html>
   );
 };
